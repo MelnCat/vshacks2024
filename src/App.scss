@@ -1,8 +1,9 @@
 .controls {
-	height: 14em;
+	height: 19em;
 	display: flex;
 	background-color: #f2f2f2;
 	padding: 1em;
+	font-size: 0.85em;
 }
 .craft {
 	background-color: #c4c4c4;
@@ -10,11 +11,28 @@
 	display: flex;
 	gap: 1em;
 }
+.crafting {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+.craft-list {
+	overflow-y: scroll;
+	scrollbar-width: thin;
+	background-color: #b3b3b3;
+	flex-basis: 0;
+	flex-grow: 1;
+}
+.craft-description {
+	font-size: 0.8em;
+	margin: 0.2em 0;
+}
 .craft-title {
 	font-size: 1.2em;
 	font-weight: bold;
 }
 .craft-cost, .craft-title {
+    flex-wrap: wrap;
 	display: flex;
 	gap: 0.25em;
 	align-items: center;
@@ -29,23 +47,37 @@
 	height: 1.25em;
 	aspect-ratio: 1 / 1;
 }
+.sell {
+	font-size: 0.85em;
+	border-radius: 0.3em;
+}
+.craft {
+	font-size: 0.9em;
+}
 .col {
 	display: flex;
 	flex-direction: column;
+    overflow-y: scroll;
+	overflow-x: hidden;
+    scrollbar-width: thin;
 	padding: 1em;
 	gap: 0.5em;
-	width: 11em;
+	width: 13em;
 	background-color: #e7e7e7;
+	h1 {
+		font-size: 1.25em;
+	}
 	p {
 		padding: 0.4em 0.4em;
 		margin: 0;
-		background-color: #d8d8d8;
+		background-color: #c7c7c7;
 		width: fit-content;
 		font-weight: bold;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		gap: 0.4em;
+		border-radius: 0.3em;
 		.count {
 			padding: 0 0.4em;
 			background-color: #f4f4f4;
@@ -56,18 +88,32 @@
 	}
 }
 .left {
-	width: 25em;
+	font-size: 0.9em;
+	width: 23em;
 	max-width: 20vw;
 	background-color: #d6d6d6;
 	padding: 1em;
+	display: flex;
+	flex-direction: column;
 	h1 {
 		font-size: 2em;
 		margin-bottom: 0.25em;
 	}
 }
+.balance {
+	font-size: 1.5em;
+}
 .info {
-	background-color: #c4c4c4;
-	padding: 1em;
+	padding: 0.25em;
+	font-size: 0.85em;
+	h1 {
+		margin: 0;
+	}
+}
+.move {
+	margin-top: 1em;
+	display: flex;
+	flex-direction: column;
 }
 .right {
 	width: 70em;

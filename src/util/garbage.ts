@@ -4,6 +4,7 @@ import { createContext, Dispatch, SetStateAction, useContext } from "react";
 import { useGame } from "./game";
 
 export class Garbage {
+	public area = 0;
 	constructor(public id: string, public drops: Record<string, number>) {}
 	register() {
 		garbageRegistry[this.id] = this;
@@ -11,15 +12,23 @@ export class Garbage {
 	get image() {
 		return `/img/garbage/${this.id}.png`;
 	}
+	setArea(area: number) {
+		this.area = area;
+		return this;
+	}
 }
 
 export const garbageRegistry: Record<string, Garbage> = {};
 
 new Garbage("bottle", { plastic: 4 }).register();
 new Garbage("can", { metal: 6 }).register();
+new Garbage("can2", { metal: 6 }).register();
 new Garbage("newspaper", { paper: 10 }).register();
 new Garbage("paperball", { paper: 3 }).register();
 new Garbage("plasticbag", { plastic: 6 }).register();
+new Garbage("bana", { compost: 3 }).register();
+new Garbage("glassbottle", { glass: 2 }).setArea(1).register();
+new Garbage("tire", { rubber: 2 }).setArea(1).register();
 
 export const useGarbage = () => {
 	const [inventory, setInventory, addItem] = useInventory();
