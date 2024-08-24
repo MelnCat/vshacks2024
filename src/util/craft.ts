@@ -125,6 +125,16 @@ export const crafts = [
 	},
 	{
 		inputs: [
+			{ type: "meal", count: 12 },
+			{ type: "pmeal", count: 8 },
+		],
+		output: "nutrients",
+		id: "nutrients",
+		time: 7500,
+		type: "machine",
+	},
+	{
+		inputs: [
 			{ type: "money", count: 200 },
 			{ type: "filter", count: 20 },
 			{ type: "container", count: 1 },

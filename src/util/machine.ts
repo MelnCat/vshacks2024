@@ -129,6 +129,18 @@ new Machine("farmer", "Farmer", "Hires farmers to use fertilizer to grow crops."
 	data.addItem("fertilizer", -Math.min(amount, data.count));
 	data.addItem("vegetation", Math.min(amount, data.count) * 4);
 }).register();
+new Machine(
+	"nutrients",
+	"Improved Nutrition",
+	"Increases crafting speed with the power of nutritious meals.",
+	data => {
+		data.game.setCraftingSpeed(x => Math.min(x + 0.50));
+	},
+	data => {
+		data.game.setCraftingSpeed(x => x - 0.50);
+	}
+).register();
+
 new Machine("metalworker", "Metalworker", "Hires metalworkers to forge nails.", undefined, undefined, 5000, data => {
 	const amount = Math.floor(data.inventory.metal);
 	if (isNaN(amount) || amount <= 0) return;
@@ -158,6 +170,7 @@ new Machine("chef", "Chef", "Hires chefs to cook meals.", undefined, undefined, 
 	data.addItem("vegetation", -3 * Math.min(amount, data.count));
 	data.addItem("meal", Math.min(amount, data.count));
 }).register();
+
 
 let currentLine = 0;
 let lineDirection = 1;
