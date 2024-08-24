@@ -1,7 +1,7 @@
 import { useLocalStorage } from "usehooks-ts";
 
 export const areas = [
-	{ id: "sidewalk", name: "", frequency: 500, max: 100, multiplier: 1 },
+	{ id: "sidewalk", name: "", frequency: 750, max: 100, multiplier: 1 },
 	{
 		id: "neglected",
 		name: "The Neglected District",

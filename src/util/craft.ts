@@ -9,8 +9,8 @@ export const crafts = [
 	},
 	{
 		inputs: [
-			{ type: "filter", count: 8 },
-			{ type: "components", count: 16 },
+			{ type: "filter", count: 6 },
+			{ type: "components", count: 12 },
 		],
 		output: { type: "container", count: 1 },
 		id: "container",
