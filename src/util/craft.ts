@@ -126,7 +126,7 @@ export const crafts = [
 	{
 		inputs: [
 			{ type: "meal", count: 12 },
-			{ type: "pmeal", count: 8 },
+			{ type: "pmeal", count: 2 },
 		],
 		output: "nutrients",
 		id: "nutrients",
