@@ -9,7 +9,7 @@ export const areas = [
 			{ type: "money", count: 25000 },
 			{ type: "pmeal", count: 64 },
 			{ type: "container", count: 100 },
-			{ type: "book", count: 50 }
+			{ type: "book", count: 200 }
 		],
 		description: "A town full of garbage and waste.",
 		frequency: 100,
