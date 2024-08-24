@@ -23,7 +23,7 @@ export const crafts = [
 			{ type: "components", count: 32 },
 		],
 		output: { type: "container", count: 4 },
-		id: "container",
+		id: "containe2r",
 		time: 24000,
 		type: "item",
 	},
