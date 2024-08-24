@@ -17,6 +17,16 @@ export const crafts = [
 		time: 8000,
 		type: "item",
 	},
+	{
+		inputs: [
+			{ type: "filter", count: 16 },
+			{ type: "components", count: 32 },
+		],
+		output: { type: "container", count: 4 },
+		id: "container",
+		time: 24000,
+		type: "item",
+	},
 	{ inputs: [{ type: "vegetation", count: 6 }], output: { type: "meal", count: 1 }, id: "tastymeal", time: 4500, type: "item" },
 	{ inputs: [{ type: "meal", count: 1 }, { type: "container", count: 1 }], output: { type: "pmeal", count: 1 }, id: "pmeal", time: 2000, type: "item" },
 	{ inputs: [{ type: "metal", count: 8 }], output: { type: "components", count: 4 }, id: "metalcomponents", time: 1500, type: "item" },
