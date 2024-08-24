@@ -5,4 +5,38 @@
 body {
 	padding: 0;
 	margin: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+	user-select: none;
+}
+img {
+	-webkit-user-drag: none;
+}
+
+h1, p {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: #eeeeee88;
+	padding: 0.25em 0.75em;
+	font-size: 1.25em;
+	font-weight: bold;
+	&:hover {
+		filter: brightness(0.95);
+	}
+	&:active {
+		filter: brightness(0.9);
+	}
+	&:disabled {
+		filter: none;
+		cursor: not-allowed;
+		background-color: #dddddd88;
+	}
 }

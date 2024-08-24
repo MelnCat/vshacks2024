@@ -12,7 +12,10 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "scss": "^0.2.4"
+    "remeda": "^2.11.0",
+    "sass-embedded": "^1.77.8",
+    "scss": "^0.2.4",
+    "usehooks-ts": "^3.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

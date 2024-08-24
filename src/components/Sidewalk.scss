@@ -1,0 +1,29 @@
+.sidewalk {
+	background-image: url("/img/sidewalk.png");
+	width: 100%;
+	background-size: contain;
+	padding-top: 4%;
+	padding-right: var(--garbage-size);
+	padding-bottom: calc(15% + var(--garbage-size));
+	aspect-ratio: 1920 / 1080;
+	--garbage-size: 4em;
+}
+.garbage-area {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.garbage {
+	position: absolute;
+	left: calc(var(--x) * 100%);
+	top: calc(var(--y) * 100%);
+	max-width: var(--garbage-size);
+	max-height: var(--garbage-size);
+	cursor: grab;
+	&:hover {
+		filter: drop-shadow(white 0px 0px 4px) brightness(1.1);
+	}
+	&:active {
+		cursor: grabbing;
+	}
+}
