@@ -151,7 +151,7 @@ export const Craft = ({ right }: { right?: boolean }) => {
 										{x.inputs.map((y, i) => (
 											<span key={i} style={{ color: inventory[y.type] >= y.count ? "" : "red" }}>
 												{itemRegistry[y.type].icon} {y.count} {itemRegistry[y.type].name}
-												{y.type === "money" && x.inputs.length > 1 ? <span style={{ marginLeft: "-0.2em" }}>, </span> : ""}
+												{(y.type as string) === "money" && x.inputs.length > 1 ? <span style={{ marginLeft: "-0.2em" }}>, </span> : ""}
 											</span>
 										))}
 									</p>
