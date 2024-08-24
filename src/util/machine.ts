@@ -134,10 +134,10 @@ new Machine(
 	"Improved Nutrition",
 	"Increases crafting speed with the power of nutritious meals.",
 	data => {
-		data.game.setCraftingSpeed(x => Math.min(x + 0.50));
+		data.game.setCraftingSpeed(x => Math.min(x + 1));
 	},
 	data => {
-		data.game.setCraftingSpeed(x => x - 0.50);
+		data.game.setCraftingSpeed(x => x - 1);
 	}
 ).register();
 
