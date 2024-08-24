@@ -63,7 +63,7 @@ new Item(
 	ItemCategory.PRODUCT,
 	"#6e7886",
 	"polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%)"
-).cost(250).register();
+).cost(50).register();
 new Item(
 	"book",
 	"Book",
@@ -99,7 +99,7 @@ new Item(
 	ItemCategory.PRODUCT,
 	"#b4ac88",
 	"polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)"
-).cost(500).register();
+).cost(250).register();
 new Item(
 	"insulation",
 	"Insulation Panel",

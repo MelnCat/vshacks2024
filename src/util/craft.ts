@@ -117,7 +117,7 @@ export const crafts = [
 		inputs: [
 			{ type: "money", count: 200 },
 			{ type: "filter", count: 20 },
-			{ type: "container", count: 2 },
+			{ type: "container", count: 1 },
 		],
 		output: "sheetpresser",
 		id: "sheetpresser",

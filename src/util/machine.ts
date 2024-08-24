@@ -70,9 +70,9 @@ export const useMachines = () => {
 	] as const;
 };
 
-new Machine("autocollector", "Auto-Collector", "Automatically picks up litter from the ground.", undefined, undefined, 1000, data => {
+new Machine("autocollector", "Auto-Collector", "Automatically picks up litter from the ground.", undefined, undefined, 800, data => {
 	const per5Sec = data.count / 5;
-	const sampled = sample(data.garbage, Math.floor(per5Sec) + (Math.random() < per5Sec % 1 ? 1 : 0));
+	const sampled = sample(data.garbage, Math.floor(per5Sec) + ((Math.random() / 2) < per5Sec % 1 ? 1 : 0));
 	for (const d of sampled) data.collectGarbage(d.id);
 }).register();
 
