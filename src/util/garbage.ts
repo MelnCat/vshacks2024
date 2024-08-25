@@ -20,15 +20,15 @@ export class Garbage {
 
 export const garbageRegistry: Record<string, Garbage> = {};
 
-new Garbage("bottle", { plastic: 4 }).register();
-new Garbage("can", { metal: 6 }).register();
-new Garbage("can2", { metal: 6 }).register();
-new Garbage("newspaper", { paper: 10 }).register();
-new Garbage("paperball", { paper: 3 }).register();
-new Garbage("plasticbag", { plastic: 6 }).register();
-new Garbage("bana", { compost: 3 }).register();
-new Garbage("glassbottle", { glass: 2 }).setArea(1).register();
-new Garbage("tire", { rubber: 2 }).setArea(1).register();
+new Garbage("bottle", { plastic: 8 }).register();
+new Garbage("can", { metal: 10 }).register();
+new Garbage("can2", { metal: 10 }).register();
+new Garbage("newspaper", { paper: 12 }).register();
+new Garbage("paperball", { paper: 6 }).register();
+new Garbage("plasticbag", { plastic: 10 }).register();
+new Garbage("bana", { compost: 8 }).register();
+new Garbage("glassbottle", { glass: 4 }).setArea(1).register();
+new Garbage("tire", { rubber: 4 }).setArea(1).register();
 
 export const useGarbage = () => {
 	const [inventory, setInventory, addItem] = useInventory();
